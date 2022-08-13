@@ -11,5 +11,7 @@ module.exports = {
   darkMode:"media", // media, class
   // [수동] 다크모드 활성화 아닌 class 속성 사용할지 이 속성 사용시 .dark 라는 부모 요소의 클래스 속성자를 따라감
 
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
