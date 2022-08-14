@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-const Upload: NextPage = () => {
+const Upload_Html: NextPage = () => {
   return (
     <div>
       <div>
@@ -48,4 +48,4 @@ const Upload: NextPage = () => {
   );
 };
 
-export default Upload;
+export default Upload_Html;

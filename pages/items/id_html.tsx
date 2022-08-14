@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-const ItemDetail: NextPage = () => {
+const ItemDetail_Html: NextPage = () => {
   return (
     <div>
       <div>
@@ -63,4 +63,4 @@ const ItemDetail: NextPage = () => {
   );
 };
 
-export default ItemDetail;
+export default ItemDetail_Html;

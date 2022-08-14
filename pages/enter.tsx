@@ -5,10 +5,7 @@ export default function Enter() {
 
   const onEmailClick = () => setMethod("email");
   const onPhoneClick = () => setMethod("phone");
-
-  function cls(...classnames: string[]) {
-    return classnames.join(" ");
-  }
+  
   //[1, 2, 3].join(" ") => "1 2 3";
   return (
     <div className="mt-16">
@@ -48,17 +45,17 @@ export default function Enter() {
           </div>
         </div>
         <form className="flex flex-col mt-8">
-          <label className="text-sm font-medium text-gray-700">
+          <label htmlFor="input" className="text-sm font-medium text-gray-700">
             {method === "email" ? "Email address" : null}
             {method === "phone" ? "Phone number" : null}
           </label>
           <div className="mt-1">
-            {method === "email" ? <input type="email" required 
+            {method === "email" ? <input type="email" id="input" required 
             className="w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-orange-500 focus:border-orange-500"/> : null}
             {method === "phone" ? (
               <div className="flex rounded-md shadow-sm">
                 <span className="flex items-center justify-center px-3 text-sm text-gray-500 border border-r-0 border-gray-300 select-none rounded-l-md bg-gray-50">+82</span>
-                <input type="number" required 
+                <input type="number" id="input" required 
                 className="w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md rounded-l-none appearance-none focus:outline-none focus:ring-orange-500 focus:border-orange-500"/>
               </div>
             ) : null}

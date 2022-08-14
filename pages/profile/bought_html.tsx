@@ -1,22 +1,26 @@
 import type { NextPage } from "next";
+import Layout from "../../components/layout";
 
-const Home_Html: NextPage = () => {
-  //return null;
+const Bought_Html: NextPage = () => {
   return (
+    <Layout canGoBack>
     <div>
       {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((_, i) => (
-        <div key={i}>
+        <div
+          key={i}
+        >
           <div>
-            <div />
+            <div/>
             <div>
-              <h3>New iPhone 14</h3>
+              <h3>
+                New iPhone 14
+              </h3>
               <span>Black</span>
               <span>$95</span>
             </div>
           </div>
           <div>
             <div>
-              {/* SVG 자료 : https://heroicons.com/ */}
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -53,25 +57,9 @@ const Home_Html: NextPage = () => {
           </div>
         </div>
       ))}
-      <button>
-        <svg
-          className="w-6 h-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-          />
-        </svg>
-      </button>
     </div>
+    </Layout>
   );
 };
 
-export default Home_Html;
+export default Bought_Html;

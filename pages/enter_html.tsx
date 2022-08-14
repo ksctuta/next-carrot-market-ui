@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Enter() {
+export default function Enter_Html() {
   const [method, setMethod] = useState<"email" | "phone">("email");
 
   const onEmailClick = () => setMethod("email");
