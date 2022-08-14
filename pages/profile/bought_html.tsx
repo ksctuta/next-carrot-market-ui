@@ -1,9 +1,7 @@
 import type { NextPage } from "next";
-import Layout from "../../components/layout";
 
 const Bought_Html: NextPage = () => {
-  return (
-    <Layout canGoBack>
+  return (    
     <div>
       {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((_, i) => (
         <div
@@ -57,8 +55,7 @@ const Bought_Html: NextPage = () => {
           </div>
         </div>
       ))}
-    </div>
-    </Layout>
+    </div>    
   );
 };
 
